@@ -36,7 +36,7 @@ export default function LandingPage() {
     const userEmail = localStorage.getItem('userEmail');
 
     try {
-      const HF_SPACE_URL = 'https://saketh916-model.hf.space';
+      const HF_SPACE_URL = 'https://saketh916-fdb-ml.hf.space';
       const API_ENDPOINT = '/scrape'; // Or whatever your Flask route is
 
       const response = await axios.post(`${HF_SPACE_URL}${API_ENDPOINT}`, { productUrl: url });
